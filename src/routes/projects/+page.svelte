@@ -2,13 +2,25 @@
 	import { resolve, base } from '$app/paths';
 	import MiniCarousel from '$lib/components/MiniCarousel.svelte';
 
-	const projects = [
+	type Project = {
+		slug: string;
+		label: string;
+		title: string;
+		background: string;
+		tags: string[];
+	} & (
+		| { kind: 'carousel'; slides: { src: string; label: string }[] }
+		| { kind: 'embed'; embedSrc: string }
+	);
+
+	const projects: Project[] = [
 		{
 			slug: '/dashboard',
 			label: 'Marketing',
 			title: 'Marketing Performance Dashboard',
 			background: 'Analyzes 9,900 advertising records for a UK retail brand across Facebook, Instagram, and Pinterest. Tracking 19 distinct data fields — from social engagement to financial metrics — to identify peak spend efficiency.',
 			tags: ['Facebook', 'Instagram', 'Pinterest', '9,900 Records'],
+			kind: 'carousel',
 			slides: [
 				{ src: `${base}/overview.png`,  label: 'Overview' },
 				{ src: `${base}/campaign.png`,  label: 'Campaign' },
@@ -16,7 +28,15 @@
 				{ src: `${base}/city.png`,      label: 'City'     },
 			],
 		},
-		// Add more projects here
+		{
+			slug: '/ewallet',
+			label: 'Product Analytics',
+			title: 'App Optimization Analysis',
+			background: 'In July 2023, an E-Wallet platform hit a critical bottleneck — transaction success rate dropped from 92% to 82% while volume held steady at ~500 daily requests. This analysis diagnosed the root causes across the payment funnel and produced a prioritized remediation roadmap.',
+			tags: ['E-Wallet', 'Funnel Analysis', 'UX', 'Infrastructure'],
+			kind: 'embed',
+			embedSrc: 'https://www.canva.com/design/DAG-qa_uyoE/Itdey-OXHmT0YVlXdyj5-w/view?embed',
+		},
 	];
 </script>
 
@@ -66,9 +86,21 @@
 							</div>
 						</div>
 
-						<!-- Right: carousel -->
+						<!-- Right: preview -->
 						<div class="p-6 lg:p-8 flex flex-col justify-center bg-base-300/40">
-							<MiniCarousel slides={project.slides} />
+							{#if project.kind === 'carousel'}
+								<MiniCarousel slides={project.slides} />
+							{:else}
+								<div class="relative w-full rounded-xl overflow-hidden shadow-lg border border-base-200" style="padding-top: 56.25%;">
+									<iframe
+										loading="lazy"
+										src={project.embedSrc}
+										class="absolute inset-0 w-full h-full border-0"
+										allowfullscreen
+										title={project.title}
+									></iframe>
+								</div>
+							{/if}
 						</div>
 
 					</div>
