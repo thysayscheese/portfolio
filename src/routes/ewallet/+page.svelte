@@ -93,10 +93,10 @@
 		<div>
 			<h2 class="font-display text-2xl font-semibold mb-4">Background</h2>
 			<p class="font-sans text-base-content/75 text-base leading-relaxed mb-4">
-				In July 2023, our E-Wallet platform hit a critical performance bottleneck. Despite a steady volume of approximately 500 daily transaction requests, the overall transaction success rate fell sharply from <strong>92% to 82%</strong> — a 10-point drop that translated directly to revenue loss and user frustration.
+				In July 2023, E-Wallet platform hit a critical performance bottleneck. Despite a steady volume of approximately 500 daily transaction requests, the overall transaction success rate fell sharply from <strong>92% to 82%</strong> — a 10-point drop that translated directly to revenue loss and user frustration.
 			</p>
 			<p class="font-sans text-base-content/75 text-base leading-relaxed">
-				As lead analyst, I was tasked with answering one question: is this a <em>technical bug</em>, a <em>UX flaw</em>, or an <em>infrastructure failure</em>? The answer turned out to be all three.
+				The project analyzes the decline in bill payment success rate since August 2025 using transactional, session, event log, and error data. Power BI and the MECE framework were applied to identify failure points across the payment journey, including authentication, gateway redirects, and app version issues. Key insights highlighted correlations between failure rates and user segments, device types, and network quality. The analysis led to actionable recommendations to optimize payment flows and reduce error impact.
 			</p>
 		</div>
 
