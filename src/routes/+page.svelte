@@ -1,5 +1,5 @@
 <script>
-import { resolve } from '$app/paths';
+import { resolve, base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -42,7 +42,7 @@ import { resolve } from '$app/paths';
 	<div class="hidden lg:flex justify-center items-center self-center">
 		<div class="w-58 h-58 rounded-full overflow-hidden shrink-0 ring-2 ring-base-300 bg-slate-600">
 			<img
-				src="/portrait.png"
+				src="{base}/portrait.png"
 				alt="Thy Tran"
 				class="w-full h-full object-cover object-top "
 				draggable="false"

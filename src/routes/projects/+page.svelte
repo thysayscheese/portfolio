@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { resolve, base } from '$app/paths';
 	import MiniCarousel from '$lib/components/MiniCarousel.svelte';
 
 	const projects = [
@@ -10,10 +10,10 @@
 			background: 'Analyzes 9,900 advertising records for a UK retail brand across Facebook, Instagram, and Pinterest. Tracking 19 distinct data fields — from social engagement to financial metrics — to identify peak spend efficiency.',
 			tags: ['Facebook', 'Instagram', 'Pinterest', '9,900 Records'],
 			slides: [
-				{ src: '/overview.png',  label: 'Overview' },
-				{ src: '/campaign.png',  label: 'Campaign' },
-				{ src: '/channel.png',   label: 'Channel'  },
-				{ src: '/city.png',      label: 'City'     },
+				{ src: `${base}/overview.png`,  label: 'Overview' },
+				{ src: `${base}/campaign.png`,  label: 'Campaign' },
+				{ src: `${base}/channel.png`,   label: 'Channel'  },
+				{ src: `${base}/city.png`,      label: 'City'     },
 			],
 		},
 		// Add more projects here

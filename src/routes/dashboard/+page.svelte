@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { resolve, base } from '$app/paths';
 	import MiniCarousel from '$lib/components/MiniCarousel.svelte';
 
 	const slides = [
-		{ src: '/overview.png',  label: 'Overview' },
-		{ src: '/campaign.png',  label: 'Campaign' },
-		{ src: '/channel.png',   label: 'Channel'  },
-		{ src: '/city.png',      label: 'City'     },
+		{ src: `${base}/overview.png`,  label: 'Overview' },
+		{ src: `${base}/campaign.png`,  label: 'Campaign' },
+		{ src: `${base}/channel.png`,   label: 'Channel'  },
+		{ src: `${base}/city.png`,      label: 'City'     },
 	];
 </script>
 
