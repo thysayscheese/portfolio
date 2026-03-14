@@ -26,11 +26,11 @@ import { resolve, base } from '$app/paths';
 		<div class="w-10 h-px bg-primary mb-7"></div>
 
 		<p class="font-sans text-base-content/70 text-sm leading-relaxed mb-4">
-			Hi, I'm Thy! Originally from Saigon and now based in Germany for nine years, my career has been a journey of turning challenges into growth. With a background in International Management and Marketing (FAU Nürnberg), I've spent years in Sales and Marketing at companies like Ergobaby, Henkel, and Körber AG.
+			Hi, I'm Thy! Originally from Saigon and based in Germany for 9 years, my career has been a journey of turning challenges into growth. With an academic background in International Management (HAW Hamburg) and MSc.Marketing (FAU Nürnberg), I've spent years in Sales and Marketing at companies Ergobaby, Henkel, and Körber AG.
 		</p>
 
 		<p class="font-sans text-base-content/70 text-sm leading-relaxed mb-9">
-			I'm currently a Sales Business Analyst at Ergobaby. I thrive on transforming complex sales data into clear visualizations, dashboards, and pricing strategies. I embrace every analytical challenge as a path to growth and a means to support the people around me. I'm passionate about using data to create a positive impact for my team and the business.
+			I'm currently a Sales Business Analyst at Ergobaby. I thrive on transforming complex sales data into clear visualizations, dashboards, and pricing strategies. I embrace every challenge as a path to growth and a means to support people around me. I'm passionate about using data to create a positive impact for my team and the business.
 		</p>
 
 		<a href={resolve('/projects')} class="btn btn-primary btn-sm text-sm font-normal">

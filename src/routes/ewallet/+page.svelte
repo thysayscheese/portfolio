@@ -93,10 +93,10 @@
 		<div>
 			<h2 class="font-display text-2xl font-semibold mb-4">Background</h2>
 			<p class="font-sans text-base-content/75 text-base leading-relaxed mb-4">
-				In July 2023, E-Wallet platform hit a critical performance bottleneck. Despite a steady volume of approximately 500 daily transaction requests, the overall transaction success rate fell sharply from <strong>92% to 82%</strong> — a 10-point drop that translated directly to revenue loss and user frustration.
+				An E-Wallet platform hit a critical performance bottleneck at the end of July 2023.  Despite a steady volume of approximately 500 daily transaction requests, the overall transaction success rate fell sharply from 92% to 82%. The project analyzes the decline in bill payment success rate using transactional, session, event log, and error data.
 			</p>
 			<p class="font-sans text-base-content/75 text-base leading-relaxed">
-				The project analyzes the decline in bill payment success rate since August 2025 using transactional, session, event log, and error data. Power BI and the MECE framework were applied to identify failure points across the payment journey, including authentication, gateway redirects, and app version issues. Key insights highlighted correlations between failure rates and user segments, device types, and network quality. The analysis led to actionable recommendations to optimize payment flows and reduce error impact.
+				Power BI and the MECE framework were applied to identify failure points across the payment journey, including authentication, gateway redirects, and app version issues. Key insights highlighted correlations between failure rates and user segments, device types, and network quality. The analysis led to actionable recommendations to optimize payment flows and reduce error impact.
 			</p>
 		</div>
 
