@@ -9,7 +9,7 @@
 		},
 		{
 			number: '02',
-			title: '3DS Handshake Gap',
+			title: '3DS Authentication Gap',
 			description: '68.2% of users who reached card confirmation never arrived at the 3DS authentication screen — a silent redirect failure in the backend payment flow.',
 		},
 		{
